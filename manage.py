@@ -1,10 +1,12 @@
+############################################################
 import os
 from flask_script import Manager
 from flask_migrate import Migrate
 from flask_migrate import MigrateCommand
-
+############################################################
 from app import app
 from app import db
+############################################################
 
 app.config.from_object("config.DevelopmentConfig")
 

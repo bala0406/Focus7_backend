@@ -5,6 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 autopep8 = "*"
+pylint = "*"
 
 [packages]
 flask = "*"
@@ -19,6 +20,10 @@ psycopg2-binary = "*"
 psycopg2 = "*"
 flask-migrate = "*"
 flask-script = "*"
+flask-login = "*"
+flask-wtf = "*"
+flask-bootstrap = "*"
+autopep8 = "*"
 
 [requires]
 python_version = "3.7"

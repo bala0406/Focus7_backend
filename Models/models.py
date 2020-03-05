@@ -1,4 +1,6 @@
-from app import db
+############################################################
+from app import db, app
+############################################################
 
 class Question(db.Model):
     q_id = db.Column(db.Integer, primary_key=True)
@@ -12,6 +14,16 @@ class Question(db.Model):
     question_mark = db.Column(db.Integer, nullable=False)
     hint = db.Column(db.String())
 
+    def __init__(self, chapter_name, question, option_1, option_2, option_3, option_4, correct_option, question_mark, hint=""):
+        self.chapter_name = chapter_name
+        self.question = question
+        self.option_1 = option_1
+        self.option_2 = option_2
+        self.option_3 = option_3
+        self.option_4 = option_4
+        self.correct_option = correct_option
+        self.question_mark = question_mark
+        self.hint = hint
 
     def __repr__(self):
-        return f"{self.id}:{self.chapter_name}:{self.question[:len(self.question) // 2]}"
+        return f"{self.q_id}:{self.chapter_name}:{self.question[:len(self.question) // 2]}"
