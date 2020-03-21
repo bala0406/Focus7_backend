@@ -18,9 +18,9 @@ app.config.from_object("config.DevelopmentConfig")
 db = SQLAlchemy(app)
 
 ############################################################
-# from Models.models import *
-# from api.Api import *
-# from Admin.admin import *
+from Models.models import *
+from api.Api import *
+from Admin.admin import *
 ############################################################
 
 @app.route("/")
