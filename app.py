@@ -1,3 +1,11 @@
+#NOTE
+'''
+All objects created are imported to app.py file
+While Using Command Line, import the packages,classes and methods only from app.py file
+Don't import from specific files or packages except app.py, you will get an circular import error
+For most cases use the commands created with flask_manager in manage.py file
+'''
+#NOTE
 ############################################################
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
@@ -16,5 +24,5 @@ from Admin.admin import *
 ############################################################
 
 
-if __name__ == '__main__':
-    app.run()
+# if __name__ == '__main__':
+#     app.run()

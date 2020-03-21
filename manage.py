@@ -1,3 +1,10 @@
+#NOTE
+'''
+Use the following commands for while deploying into production server 
+
+'''
+
+
 ############################################################
 import os
 from flask_script import Manager
