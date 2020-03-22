@@ -24,8 +24,8 @@ from Admin.admin import *
 ############################################################
 
 @app.route("/")
-def hello():
-    return "hello"
+def home():
+    return "use /getquestions for api and /admin for admin interface"
 
-if __name__ == '__main__':
-    app.run()
+# if __name__ == '__main__':
+#     app.run()
