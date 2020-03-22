@@ -11,7 +11,7 @@ from app import db
 def getQuestions():
 
     questionsList = []
-    rowCount = Question.query.all().count()
+    rowCount = len(Question.query.all())
     # questionDict = {}
     for i in range(7):
         

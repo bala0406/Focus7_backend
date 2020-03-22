@@ -15,7 +15,7 @@ from app import app
 from app import db
 ############################################################
 
-app.config.from_object("config.ProductionConfig")
+app.config.from_object("config.DevelopmentConfig")
 
 migrate = Migrate(app,db)
 manager = Manager(app)

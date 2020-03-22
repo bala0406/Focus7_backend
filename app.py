@@ -14,7 +14,7 @@ from flask_admin.contrib.sqla import ModelView
 ############################################################
 
 app = Flask(__name__)
-app.config.from_object("config.ProductionConfig")
+app.config.from_object("config.DevelopmentConfig")
 db = SQLAlchemy(app)
 
 ############################################################
