@@ -2,12 +2,12 @@ from flask import jsonify
 from random import randint
 
 
-from Models.models import Question
+from models import Question
 from app import app
 from app import db
 
 
-@app.route("/getquestions", methods=["GET"])
+@app.route("/api/getquestions", methods=["GET"])
 def getQuestions():
 
     questionsList = []
@@ -19,6 +19,7 @@ def getQuestions():
         chapter_name = question.chapter_name
         quest_ion = question.question
         option_1 = question.option_1
+        option_2 = question.option_2
         option_2 = question.option_2
         option_3 = question.option_3
         option_4 = question.option_4

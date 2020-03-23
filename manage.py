@@ -1,9 +1,3 @@
-#NOTE
-'''
-Use the following commands for while deploying into production server 
-
-'''
-
 
 ############################################################
 import os

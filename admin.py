@@ -8,8 +8,7 @@ from flask_login import logout_user
 ############################################################
 from app import app
 from app import db
-from Models.models import Question
-from Models.adminmodel import Administrator
+from models import Question
 ###########################################################
 
 # @login.loadUser
@@ -36,4 +35,4 @@ class ModelView(ModelView):
 
 admin = Admin(app)
 admin.add_view(ModelView(Question, db.session))
-admin.add_view(ModelView(Administrator, db.session))
+
