@@ -16,6 +16,7 @@ class ProductionConfig(Config):
     DEBUG = False
     SQLALCHEMY_DATABASE_URI = "postgres://lstplxgnurplcj:675c3ad9a7fa1fd2c7aef0246575de8d0f4c03bdc96e44ec695425d9e76ab312@ec2-34-197-212-240.compute-1.amazonaws.com:5432/dfr4p8u6g53kvk"
     SECRET_KEY = "ba094042e2e58bc968182c7b00c58dc3"
+    
 class StagingConfig(Config):
     DEVELOPMENT = True
     DEBUG = True

@@ -16,8 +16,8 @@ from models import Question
 #     return Administrator.query.get(admin_id)
 
 class ModelView(ModelView):
-    column_display_pk = True
-
+    # column_display_pk = True
+    pass
     # def is_accessible(self):
     #     # return current_user.is_autheticated
     #     pass
