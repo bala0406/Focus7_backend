@@ -14,7 +14,7 @@ def getQuestions():
     rowCount = len(Question.query.all())
     # questionDict = {}
     for i in range(7):
-        
+
         question = Question.query.get(randint(1, rowCount))
         chapter_name = question.chapter_name
         quest_ion = question.question
