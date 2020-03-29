@@ -9,7 +9,7 @@ from main import app
 from main import db
 ############################################################
 
-app.config.from_object("config.DevelopmentConfig")
+app.config.from_object("config.ProductionConfig")
 
 migrate = Migrate(app,db)
 manager = Manager(app)
