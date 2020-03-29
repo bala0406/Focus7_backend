@@ -1,6 +1,6 @@
 from flask import jsonify
-from random import randint
-
+from sqlalchemy.sql.expression import func
+from sqlalchemy.sql.expression import select
 
 from models import Question
 from app import app
@@ -16,7 +16,7 @@ def getQuestions():
     if rowCount != 0:
         for i in range(7):
 
-            question = Question.query.get(randint(1, rowCount))
+            question = Question.query.order_by(func.random()).limit(1).first()
             chapter_name = question.chapter_name
             quest_ion = question.question
             option_1 = question.option_1

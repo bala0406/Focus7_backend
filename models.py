@@ -12,7 +12,7 @@ class Question(db.Model):
     option_4 = db.Column(db.String(), nullable=False)
     correct_option = db.Column(db.String(), nullable=False)
     question_mark = db.Column(db.Integer, nullable=False)
-    hint = db.Column(db.String())
+    hint = db.Column(db.String()) 
 
     def __init__(self, chapter_name, question, option_1, option_2, option_3, option_4, correct_option, question_mark, hint=""):
         self.chapter_name = chapter_name
